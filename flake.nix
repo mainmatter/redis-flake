@@ -46,7 +46,7 @@
     # - For specific commit: "github:redis/redis/abcdef123456789"
     # - For local source: use inputs.redis.url = "/path/to/local/redis";
     redis = {
-      url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=rl_big2_8.4";
+      url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=RediSearchDisk";
       flake = false;
     };
 
