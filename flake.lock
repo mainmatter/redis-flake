@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1770115704,
-        "narHash": "sha256-KHFT9UWOF2yRPlAnSXQJh6uVcgNcWlFqqiAZ7OVlHNc=",
+        "lastModified": 1772963539,
+        "narHash": "sha256-9jVDGZnvCckTGdYT53d/EfznygLskyLQXYwJLKMPsZs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+        "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
         "type": "github"
       },
       "original": {
@@ -37,11 +37,11 @@
     "redis": {
       "flake": false,
       "locked": {
-        "lastModified": 1769499440,
-        "narHash": "sha256-9YZZjcZHZkpDoD82vRCV7XaYjqhmLvb48vXBdeVKe9I=",
+        "lastModified": 1771333222,
+        "narHash": "sha256-XqfS5/+cUrV6m5EV84+7AGOBT5pBOuYYOITqxhcLzjU=",
         "ref": "RediSearchDisk",
-        "rev": "8798a166165fb3b22569836f5a3dfe83370a357d",
-        "revCount": 20407,
+        "rev": "d8d3804896bead96a536cf0fee5db98ff91eb32a",
+        "revCount": 20446,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/Redis.git"
       },
@@ -62,11 +62,11 @@
     "speedb": {
       "flake": false,
       "locked": {
-        "lastModified": 1770026009,
-        "narHash": "sha256-joMGqh3Z88ltsc6oCz6NCeFeTmoiHht7VUMJd685QD4=",
+        "lastModified": 1773237922,
+        "narHash": "sha256-FwvMacg8RANEfaHo+dhBg1j+3ED8qTC+u3wIZYS0PRk=",
         "ref": "refs/heads/main",
-        "rev": "b6fef0bd5135f1b078f1d0017799dfc64256384e",
-        "revCount": 12253,
+        "rev": "31c0ffcd3a4790e875d870f43b422bf72bcfeb8d",
+        "revCount": 12257,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/speedb-ent"
       },
