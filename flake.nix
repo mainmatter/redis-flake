@@ -87,7 +87,7 @@
 
           # DEPENDENCY: zlib
           # Required for compilation of this Redis fork
-          buildInputs = (oldAttrs.buildInputs or []) ++ [ pkgs.zlib ];
+          buildInputs = (oldAttrs.buildInputs or []) ++ [ pkgs.zlib pkgs.liburing ];
 
           # BUILD TOOLS:
           # - cmake: Required to build the speedb dependency (a RocksDB fork)
@@ -111,6 +111,14 @@
             rm -rf speedb/
             cp -r ${speedb} speedb
             chmod -R u+w speedb
+
+            # Patch Redis src/Makefile: replace static liburing link with dynamic
+            sed -i 's/-l:liburing\.a/-luring/g' src/Makefile
+
+            # Patch speedb's Finduring.cmake to search for "uring" instead of "liburing.a"
+            # "liburing.a" doesn't exist in Nix - only the dynamic library is available
+            # Inspired by https://github.com/NixOS/nixpkgs/blob/44bae273f9f82d480273bab26f5c50de3724f52f/pkgs/by-name/ro/rocksdb/package.nix#L32-L34
+            sed -i 's/NAMES liburing\.a liburing/NAMES uring/' speedb/cmake/modules/Finduring.cmake
 
             # Patch speedb header to include cstdint
             # This is only temporarily needed until the speedb source is fixed upstream
