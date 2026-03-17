@@ -4,13 +4,13 @@
   # USAGE GUIDE:
   #
   # 1. Run Redis server:
-  #    nix run github:chesedo/redis-flake
+  #    nix run github:mainmatter/redis-flake
   #
   # 2. Run Redis CLI:
-  #    nix run github:chesedo/redis-flake#redis-cli
+  #    nix run github:mainmatter/redis-flake#redis-cli
   #
   # 3. Development shell with Redis available:
-  #    nix develop github:chesedo/redis-flake
+  #    nix develop github:mainmatter/redis-flake
   #
   # 4. Use as dependency in another flake:
   #    # In your flake.nix:
@@ -19,13 +19,13 @@
   #
   #      # Basic usage - use the default (unstable) Redis version
   #      redis-flake = {
-  #        url = "github:chesedo/redis-flake";
+  #        url = "github:mainmatter/redis-flake";
   #        inputs.nixpkgs.follows = "nixpkgs";
   #      };
   #
   #      # OR: Override the Redis source in this flake to use a specific version
   #      redis-flake = {
-  #        url = "github:chesedo/redis-flake";
+  #        url = "github:mainmatter/redis-flake";
   #        inputs.nixpkgs.follows = "nixpkgs";
   #        inputs.redis.url = "github:redis/redis/7.4.2"; # Specific stable version
   #      };
@@ -157,7 +157,7 @@
 
         # APPLICATIONS:
         # These define runnable applications in this flake.
-        # Access with: nix run github:chesedo/redis-flake#<app-name>
+        # Access with: nix run github:mainmatter/redis-flake#<app-name>
         apps = {
           redis = flake-utils.lib.mkApp {
             drv = self.packages.${system}.redis;

@@ -14,13 +14,13 @@ A simple Nix flake that builds Redis from GitHub or local sources.
 ### Run Redis Server
 
 ```
-nix run github:chesedo/redis-flake
+nix run github:mainmatter/redis-flake
 ```
 
 ### Run Redis CLI
 
 ```
-nix run github:chesedo/redis-flake#redis-cli
+nix run github:mainmatter/redis-flake#redis-cli
 ```
 
 ## Using as a Dependency
@@ -33,7 +33,7 @@ inputs = {
   
   # Default version (unstable branch)
   redis-flake = {
-    url = "github:chesedo/redis-flake";
+    url = "github:mainmatter/redis-flake";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 };
@@ -50,7 +50,7 @@ To use a specific Redis version, override the `redis` input:
 
 ```nix
 redis-flake = {
-  url = "github:chesedo/redis-flake";
+  url = "github:mainmatter/redis-flake";
   inputs.nixpkgs.follows = "nixpkgs";
   inputs.redis.url = "github:redis/redis/7.4.2";  # Use stable 7.4.2
 };
