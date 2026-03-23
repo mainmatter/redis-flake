@@ -46,7 +46,7 @@
     # - For specific commit: "github:redis/redis/abcdef123456789"
     # - For local source: use inputs.redis.url = "/path/to/local/redis";
     redis = {
-      url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=rsd_big2_8.4";
+      url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=rse_big2_8.6";
       flake = false;
     };
 
@@ -59,7 +59,7 @@
     # 2. This approach gives us more control over the speedb version
     # 3. We can copy speedb to a writable location during the build
     speedb = {
-      url = "git+ssh://git@github.com/redislabsdev/speedb-ent?rev=4b8b34b8c290da817a34a37c1cc821d0ccd13e4b";
+      url = "git+ssh://git@github.com/redislabsdev/speedb-ent?rev=d52df54a12b45116e42163fc0f4e95ccf535ee41";
       flake = false;
     };
   };
