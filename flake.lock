@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1772963539,
-        "narHash": "sha256-9jVDGZnvCckTGdYT53d/EfznygLskyLQXYwJLKMPsZs=",
+        "lastModified": 1777268161,
+        "narHash": "sha256-bxrdOn8SCOv8tN4JbTF/TXq7kjo9ag4M+C8yzzIRYbE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
+        "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
         "type": "github"
       },
       "original": {
@@ -37,16 +37,16 @@
     "redis": {
       "flake": false,
       "locked": {
-        "lastModified": 1773854570,
-        "narHash": "sha256-avx3yn5uPtACdm8WAM1Pt1TfL54JB9lHUp5FbnDlmZs=",
-        "ref": "rse_big2_8.6",
-        "rev": "6ecb8d6d5e15750a1e0d57f6e8e9279cf70a7f2a",
-        "revCount": 20633,
+        "lastModified": 1777477045,
+        "narHash": "sha256-uYLYnH42i+6JsXFAkoARweFXqPix0Y3sqPlX4ZeUCDo=",
+        "ref": "rl_big2_8.6",
+        "rev": "c9c5c8960afc2a12ecdae82af75e5401714eeeaf",
+        "revCount": 20719,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/Redis.git"
       },
       "original": {
-        "ref": "rse_big2_8.6",
+        "ref": "rl_big2_8.6",
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/Redis.git"
       }
@@ -62,16 +62,16 @@
     "speedb": {
       "flake": false,
       "locked": {
-        "lastModified": 1773767323,
-        "narHash": "sha256-XiY2iUX1RLpI4ZAPZuBL4e75CIC+n+bdktY19SvyOJc=",
+        "lastModified": 1774827142,
+        "narHash": "sha256-rQA0LAbY0Gwb5RWT51OexE/C6rlhp9DITCotrbxdz8Y=",
         "ref": "refs/heads/main",
-        "rev": "d52df54a12b45116e42163fc0f4e95ccf535ee41",
-        "revCount": 12259,
+        "rev": "3cc94f283eedccfb203d3c48af65a057dca15799",
+        "revCount": 12261,
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/speedb-ent"
       },
       "original": {
-        "rev": "d52df54a12b45116e42163fc0f4e95ccf535ee41",
+        "rev": "3cc94f283eedccfb203d3c48af65a057dca15799",
         "type": "git",
         "url": "ssh://git@github.com/redislabsdev/speedb-ent"
       }
