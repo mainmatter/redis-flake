@@ -46,7 +46,7 @@
     # - For specific commit: "github:redis/redis/abcdef123456789"
     # - For local source: use inputs.redis.url = "/path/to/local/redis";
     redis = {
-      url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=rl_big2_8.6";
+      url = "git+ssh://git@github.com/redislabsdev/Redis.git?ref=rl_big2_beta";
       flake = false;
     };
 
@@ -59,7 +59,7 @@
     # 2. This approach gives us more control over the speedb version
     # 3. We can copy speedb to a writable location during the build
     speedb = {
-      url = "git+ssh://git@github.com/redislabsdev/speedb-ent?rev=b23d60f008dbd292f6aae0f45cfa4aad29800a78";
+      url = "git+ssh://git@github.com/redislabsdev/speedb-ent?rev=3b70101d8d677a12b18521473fbf22c842d2c26c";
       flake = false;
     };
   };
@@ -76,7 +76,7 @@
         in if versionMatch != null then builtins.elemAt versionMatch 0 else "unknown";
 
         # Create a customized Redis package
-        # This Redis Labs fork (rl_big2_8.0 branch) has custom block storage drivers
+        # This Redis Labs fork (rl_big2_beta branch) has custom block storage drivers
         # (bs_dummy.so and bs_speedb.so) that require special build configuration
         customRedis = pkgs.redis.overrideAttrs (oldAttrs: {
           src = redis;
