@@ -59,7 +59,7 @@
     # 2. This approach gives us more control over the speedb version
     # 3. We can copy speedb to a writable location during the build
     speedb = {
-      url = "git+ssh://git@github.com/redislabsdev/speedb-ent?rev=3cc94f283eedccfb203d3c48af65a057dca15799";
+      url = "git+ssh://git@github.com/redislabsdev/speedb-ent?rev=b23d60f008dbd292f6aae0f45cfa4aad29800a78";
       flake = false;
     };
   };
